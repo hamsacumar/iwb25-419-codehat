@@ -1,6 +1,6 @@
 # TabWallet
 
-![App Logo](/frontend/public/logo.png)  
+![App Logo](/froentend/public/logo.png)  
 
 **TabWallet** is a secure web application that allows users to register, log in, and manage links, categorized according to their preferences. Security is a key focus, with **encryption and hashing** applied to sensitive data.  
 
