@@ -1,10 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject, PLATFORM_ID } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDialog } from '@angular/material/dialog';
 import { MatMenuModule } from '@angular/material/menu';
+import { Router } from '@angular/router';
+import { isPlatformBrowser } from '@angular/common';
 
 // Shared Components
 import { HeaderComponent } from '../shared/header/header.component';
@@ -60,12 +62,23 @@ export class HomeComponent implements OnInit {
     private categoryService: CategoryService,
     private linkService: LinkService,
     private authService: AuthService,
-    private searchService: SearchService
+    private searchService: SearchService,
+    private router: Router,
+    @Inject(PLATFORM_ID) private platformId: Object
   ) {}
 
   // ====================== LIFECYCLE ======================
 
   ngOnInit() {
+    // Check authentication state first
+    if (isPlatformBrowser(this.platformId)) {
+      const token = localStorage.getItem('authToken');
+      if (!token) {
+        this.router.navigate(['/']);
+        return;
+      }
+    }
+
     console.log('ngOnInit started');
     this.visibleCount['all'] = 6;
     this.visibleCount['uncategorized'] = 6;
