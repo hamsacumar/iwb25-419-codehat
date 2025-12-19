@@ -10,7 +10,6 @@ import { ProfileComponent } from '../../profile/profile.component'; // Import Pr
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css'],
 })
-
 export class HeaderComponent {
   @ViewChild('profileDropdown', { static: false }) profileDropdown!: ElementRef;
   isProfileModalOpen = false; // Changed from isProfileDropdownOpen
@@ -18,18 +17,17 @@ export class HeaderComponent {
   constructor(private router: Router) {}
 
   isDarkMode = false;
-isBackendMode = false;
+  isBackendMode = false;
 
-toggleDarkMode() {
-  this.isDarkMode = !this.isDarkMode;
+  toggleDarkMode() {
+    this.isDarkMode = !this.isDarkMode;
 
-  if (this.isDarkMode) {
-    document.body.classList.add('dark-mode');
-  } else {
-    document.body.classList.remove('dark-mode');
+    if (this.isDarkMode) {
+      document.body.classList.add('dark-mode');
+    } else {
+      document.body.classList.remove('dark-mode');
+    }
   }
-}
-
 
   toggleProfileModal(): void {
     // Renamed method
@@ -43,8 +41,9 @@ toggleDarkMode() {
 
   logout(): void {
     this.closeProfileModal(); // Updated method name
-    localStorage.removeItem('userToken');
-    this.router.navigate(['/login']);
+    localStorage.removeItem('authToken');
+    localStorage.removeItem('user');
+    this.router.navigate(['/']);
   }
 
   @HostListener('document:click', ['$event'])
