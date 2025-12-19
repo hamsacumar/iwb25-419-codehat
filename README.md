@@ -210,3 +210,7 @@ This project provides a **secure and organized way to manage personal or profess
 
 ### edit category 
 ![edit Page](froentend/public/screenshots/editcategory.png)
+
+### Admin Dashboard 
+![admin Page](froentend/public/screenshots/admin1.png)
+![admin Page](froentend/public/screenshots/admin2.png)
