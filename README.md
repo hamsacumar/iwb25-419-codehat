@@ -1,8 +1,7 @@
 # TabWallet
 
-![App Logo](/froentend/public/logo.png)  
-
-**TabWallet** is a secure web application that allows users to register, log in, and manage links, categorized according to their preferences. Security is a key focus, with **encryption and hashing** applied to sensitive data.  
+A secure and modern **link-management** platform that allows users to organize links into categories, manage their profiles, and access admin-level features.
+Built for the **WSO2 Ballerina** Competition 2025, this collaborative project focuses on security, performance, and clean architecture.
 
 ---
 
@@ -10,22 +9,152 @@
 
 ### User Registration & Login
 - Register with a username and password.
-- A verification code is sent to your Gmail to confirm your account.
-- Log in using your credentials after verification.
+- Secure password handling.
+- JWT-based authentication.
+- Access-level control (User/Admin)
+
+### Profile Management
+- Update username.
+- Change password.
+- Manage personal details.
 
 ### Link Management
 - Add new links.
 - Categorize links for better organization.
-- Update existing links and categories.
+- Encrypted CRUD operations for: Links,Categories.
 - Delete links as needed.
 
 ### Security
 - User passwords, links, and categories are securely hashed and encrypted.
 - Users can update their username and password at any time.
+- Role-based access control (Admin/User).
+- Sanitized inputs & safe database operations.
+
+### Admin Dashboard
+- Full access to: Users list,Categories,Links.
+- Admin-level CRUD operations.
+- Monitoring & management tools.
 
 ---
 
+## Tech Stack
+
+### Frontend
+- Angular
+- TypeScript
+- HTML / SCSS
+
+### Backend
+- Ballerina
+- Secure RESTful APIs
+- Token-based security
+
+### Database
+- MongoDB
+
+### Tools
+- VS Code
+- Postman
+- Git / GitHub
+
+---
+
+## Project Structure
+`frontend/
+├── .angular/
+│   └── cache/
+│       └── 192.15/
+│           └── fr.
+├── .vscode/
+├── node_modules/
+├── public/
+├── screenshots/
+├── favicon.ico
+├── logo.png
+└── src/
+    ├── app/
+    │   ├── filter-bar/
+    │   ├── guard/
+    │   ├── home/
+    │   ├── landingpage/
+    │   ├── model/
+    │   ├── monthly-bar-chart/
+    │   ├── panel/
+    │   ├── profile/
+    │   ├── search-bar/
+    │   ├── service/
+    │   ├── shared/
+    │   ├── test/
+    │   ├── user-list/
+    │   ├── app.component.css
+    │   ├── app.component.html
+    │   ├── app.component.spec.ts
+    │   ├── app.component.ts
+    │   ├── app.config.server.ts
+    │   ├── app.config.ts
+    │   ├── app.routes.server.ts
+    │   ├── app.routes.ts
+    │   └── assets/
+    ├── environments/
+    ├── custom-theme.scss
+    ├── index.html
+    ├── main.server.ts
+    ├── main.ts
+    ├── server.ts
+    ├── styles.css
+    └── .editorconfig
+
+backend/
+├── .vscode/
+├── target/
+├── bin/
+├── cache/
+├── resources/
+├── build/
+├── .devcontainer.json
+├── .gitignore
+├── Admin.bal
+├── Auth.bal
+├── Ballerina.toml
+├── config.toml
+├── db_config.bal
+├── Dependencies.toml
+├── home.bal
+└── main.bal
+
+root/
+├── .gitignore
+├── angular.json
+├── package-lock.json
+├── package.json
+├── README.md
+├── tsconfig.app.json
+├── tsconfig.json
+└── tsconfig.spec.json`
+
+---
 ## Getting Started
+
+### Clone the Repository
+`git clone https://github.com/your-username/TabWallet.git`
+`cd TabWallet`
+
+### Run Backend (Ballerina)
+`cd backend`
+`bal run`
+
+### Run Frontend (Angular)
+`cd frontend`
+`npm install`
+`ng serve`
+
+### project runs at:
+`http://localhost:4200`
+
+
+---
+
+## Core Functionalities
 
 ### 1. Register an Account
 - Go to the registration page.
@@ -59,3 +188,25 @@
 ---
 
 This project provides a **secure and organized way to manage personal or professional links** efficiently.
+
+---
+
+## Screen shots 
+
+### Login 
+![Login Page](froentend/public/screenshots/login.png)
+
+### Sign in 
+![Signin Page](froentend/public/screenshots/signin.jpeg)
+
+### Home page 
+![home Page](froentend/public/screenshots/home.png)
+
+### Dark mode 
+![darkmood Page](froentend/public/screenshots/darkmood.png)
+
+### Add category 
+![add Page](froentend/public/screenshots/addcategory.png)
+
+### edit category 
+![edit Page](froentend/public/screenshots/editcategory.png)
