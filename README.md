@@ -60,7 +60,9 @@ Built for the **WSO2 Ballerina** Competition 2025, this collaborative project fo
 ---
 
 ## Project Structure
-```frontend/
+
+```
+frontend/
 ├── .angular/
 │   └── cache/
 │       └── 192.15/
@@ -130,7 +132,8 @@ root/
 ├── README.md
 ├── tsconfig.app.json
 ├── tsconfig.json
-└── tsconfig.spec.json```
+└── tsconfig.spec.json
+```
 
 ---
 ## Getting Started
