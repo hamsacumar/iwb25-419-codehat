@@ -2,7 +2,7 @@
 
 # 🏅 WSO2 Ballerina Competition 2025 — Official Entry
 
-<img src="frontend/public/logo.png" alt="TabWallet Logo" width="140"/>
+<img src="froentend/public/logo.png" alt="TabWallet Logo" width="140"/>
 
 # TabWallet
 ### Secure Link Intelligence & Organization Platform
@@ -68,26 +68,26 @@ TabWallet was built as an official entry for the **WSO2 Ballerina Competition 20
 > Built with Angular + custom SCSS theming — includes full dark mode support.
 
 ### Login
-![Login Page](frontend/public/screenshots/login.png)
+![Login Page](froentend/public/screenshots/login.png)
 
 ### Sign Up
-![Sign Up Page](frontend/public/screenshots/signin.jpeg)
+![Sign Up Page](froentend/public/screenshots/signin.jpeg)
 
 ### Home Dashboard
-![Home Page](frontend/public/screenshots/home.png)
+![Home Page](froentend/public/screenshots/home.png)
 
 ### Dark Mode
-![Dark Mode](frontend/public/screenshots/darkmood.png)
+![Dark Mode](froentend/public/screenshots/darkmood.png)
 
 ### Add Category
-![Add Category](frontend/public/screenshots/addcategory.png)
+![Add Category](froentend/public/screenshots/addcategory.png)
 
 ### Edit Category
-![Edit Category](frontend/public/screenshots/editcategory.png)
+![Edit Category](froentend/public/screenshots/editcategory.png)
 
 ### Admin Dashboard
-![Admin Panel 1](frontend/public/screenshots/admin1.png)
-![Admin Panel 2](frontend/public/screenshots/admin2.png)
+![Admin Panel 1](froentend/public/screenshots/admin1.png)
+![Admin Panel 2](froentend/public/screenshots/admin2.png)
 
 ---
 
